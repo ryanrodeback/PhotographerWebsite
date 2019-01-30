@@ -1,0 +1,184 @@
+/* Masonry grid */
+.masonry {
+  margin-left: 20px;
+  margin-right: 20px;
+  column-count: 3;
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+  background-color: #1D2227 !important;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 50px;
+  display: inline-block;
+  /* Fix the misalignment of items */
+  vertical-align: top;
+  /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  width: 100%;
+  /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.backgroundPicture {
+  background-image: url("../photos/IMG_0025.JPG");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#aboutPhoto {
+  float: right;
+  height: auto;
+  width: 500px;
+  margin-right: 3%;
+  margin-left: 5%;
+}
+
+#body {
+  min-height: 100%;
+}
+
+#body p {
+  width: 50%;
+  color: white;
+}
+
+#bio p {
+  width: 100%;
+}
+
+#body .grid p {
+  width: 100%;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.grid img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  padding-left: 20px;
+  column-gap: 15px;
+  padding-right: 35px;
+}
+
+footer {
+  color: white;
+  margin-top: -40px;
+}
+
+footer a {
+  margin-left: 15px;
+}
+
+.homeImage {
+  width: 50px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+/* Menu */
+.bg-dark {
+  background-color: #0F3142 !important;
+}
+
+.navbar-brand {
+  font-size: 1.3em;
+  border-right: 1px solid #fff;
+  padding-right: 1rem;
+}
+
+body {
+  background-color: #1D2227;
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  width: 100% !important;
+  text-align: center;
+}
+
+.container p.name {
+  font-size: 1.2em;
+  /*border-bottom: 1px dotted white; */
+}
+
+.container p.name:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 150px;
+  /* Change this to whatever width you want. */
+  padding-top: 0px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 1px dotted white;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
